@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Sorts+Mill+Goudy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    /* COLORS */
+    --primary: #fcfcfc;
+    --secondary: #F7F7F2;
+
+    /* FONT COLORS */
+    --prime-font-color: #383838;
+
+    /* FONTS */
+    --main-font:  'Fira Sans', Sans-Serif;
+    /* --heading-h1-font: 'Sorts Mill Goudy', serif; */
+    --heading-h1-font: 'Poppins', sans-serif;
+    --heading-h2-font: 'Lato', sans-serif;
+    --heading-h3-font: 'Lato', sans-serif;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+h2 {
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
