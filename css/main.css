@@ -1,61 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Sorts+Mill+Goudy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Sorts+Mill+Goudy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-    /* COLORS */
-    --primary: #fcfcfc;
-    --secondary: #F7F7F2;
+  /* COLORS */
+  --primary: #fcfcfc;
+  --secondary: #f7f7f2;
 
-    /* FONT COLORS */
-    --prime-font-color: #383838;
+  /* FONT COLORS */
+  --prime-font-color: #383838;
 
-    /* FONTS */
-    --main-font:  'Fira Sans', Sans-Serif;
-    /* --heading-h1-font: 'Sorts Mill Goudy', serif; */
-    --heading-h1-font: 'Poppins', sans-serif;
-    --heading-h2-font: 'Lato', sans-serif;
-    --heading-h3-font: 'Lato', sans-serif;
-  }
+  /* FONTS */
+  --main-font: "Fira Sans", Sans-Serif;
+  /* --heading-h1-font: 'Sorts Mill Goudy', serif; */
+  --heading-h1-font: "Poppins", sans-serif;
+  --heading-h2-font: "Lato", sans-serif;
+  --heading-h3-font: "Lato", sans-serif;
+}
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--main-font);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
 }
 
 h2 {
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 1rem;
+}
+
+.logo-container {
+  width: 2rem;
+}
+
+.logo {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: chartreuse; */
+}
+
+.main-container {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 90%;
+  height: 80vh;
+  border-radius: 2rem;
+  /* background-color: brown; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 1rem 3rem;
+}
+
+.time-container {
+  /* background-color: aqua; */
+  width: 50%;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: blueviolet; */
+  /* width: 60%; */
+  flex-grow: 1;
+}
+
+.table-div {
+  width: 100%;
+  /* background-color: tomato; */
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.attendance-table thead tr {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  text-align: left;
+  
+}
+
+table th:first-child{
+    border-radius:10px 0 0 0px;
+  }
+
+  table th:last-child{
+    border-radius:0 10px 0 0;
+  }
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px 15px;
 
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    margin-top: 1rem;
+.attendance-table tr {
+  border-bottom: 1px solid #c0bfbf75;
 }
 
-.logo-container{
-    width: 2rem;
+.attendance-table tr:hover {
+  background-color: rgb(207, 207, 207) !important;
 }
 
-.logo{
-    display: block;
-    object-fit: cover;
-    width: 100%;
+.attendance-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }
 
-.main-container{
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    width: 90%;
-    height: 80vh;
-    background-color: rgb(247, 242, 237);
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
+.attendance-table tbody tr:last-of-type {
+  border-bottom: 3px solid #3f3f3f;
 }
+
