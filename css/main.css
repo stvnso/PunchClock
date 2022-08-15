@@ -30,11 +30,32 @@ h2 {
 
 }
 
-.logo{
+header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 1rem;
-    fle
+}
+
+.logo-container{
+    width: 2rem;
+}
+
+.logo{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+    height: 80vh;
+    background-color: rgb(247, 242, 237);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,28 @@
     <title>Punch Clock</title>
     <script language="javascript" type="text/javascript" src="script.js"></script>
 </head>
+
 <body>
-<header>
-    <div class="logo">
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="img/punch-clock2.png" alt="">
+        </div>
         <h1>Stempeluhr</h1>
-        <h3><span id="time"></span></h3>
+    </header>
+    <main>
         <h3><span id="date"></span></h3>
-    </div>
-</header>    
+        <div class="main-container">
+            <div class="time-container">
+                <h3><span id="time"></span></h3>
+                <h3><span id="punch-in-time">#pit</span></h3>
+                <h3><span id="hours-worked"></span></h3>
+                <button id="punch-in-out">Punch In</button>
+            </div>
+            <div class="table-container">
+                <h3>Zeiterfassung</h3>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
