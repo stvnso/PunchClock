@@ -146,7 +146,7 @@ table th:last-child {
   border-bottom: 3px solid #3f3f3f;
 }
 
-#punch-in-out{
+#btn-punch-in-out{
     background-color: aqua;
     /* position: absolute; */
     /* top:50%; */
@@ -160,7 +160,7 @@ table th:last-child {
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
 }
 
-#punch-in-out:hover{
+#btn-punch-in-out:hover{
     background-color: #189e13;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
