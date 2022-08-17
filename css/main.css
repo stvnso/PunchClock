@@ -127,7 +127,7 @@ main {
   letter-spacing: 0.6rem;
 }
 
-#btn-punch-in-out {
+#btn-punch{
   display: block;
   margin: 4rem auto;
   background-color: #22d41b;
@@ -141,7 +141,7 @@ main {
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
 }
 
-#btn-punch-in-out:hover {
+#btn-punch:hover {
   background-color: #189e13;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
