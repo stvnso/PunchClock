@@ -31,7 +31,7 @@ h1 {
   letter-spacing: 0.2rem;
 }
 
-h2{
+h2 {
   font-size: 4rem;
   font-weight: 300;
 }
@@ -61,7 +61,7 @@ header {
   width: 100%;
 }
 
-#logo-heading{
+#logo-heading {
 }
 
 main {
@@ -92,18 +92,21 @@ main {
   padding-top: 1rem;
 }
 
-#time{
-    /* background: tomato; */
-    position: relative;
-    left: -0.3rem;
+#time {
+  /* background: tomato; */
+  position: relative;
+  left: -0.3rem;
+  font-weight: 700;
 }
 
-#date{
+#date {
   text-transform: uppercase;
   letter-spacing: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
-#punch-in-time{
+#punch-in-time {
   /* background-color: bisque; */
   display: block;
   margin-top: 4rem;
@@ -111,24 +114,24 @@ main {
   left: -0.3rem;
 }
 
-#punch-in-text{
+#punch-in-text {
   text-transform: uppercase;
   letter-spacing: 0.6rem;
 }
 
-#hours-worked{
+#hours-worked {
   display: block;
   margin-top: 4rem;
   position: relative;
   left: -0.3rem;
 }
 
-#hours-worked-text{
+#hours-worked-text {
   text-transform: uppercase;
   letter-spacing: 0.6rem;
 }
 
-#btn-punch{
+#btn-punch {
   display: block;
   margin: 2.5rem auto;
   background-color: #22d41b;
@@ -159,9 +162,7 @@ main {
   /* left: 50; */
   /* transform: translate(-50,-50); */
   background-color: rgba(44, 44, 44, 0.39);
- 
 }
-
 
 /* ------------------RIGHT SIDE---------------- */
 
@@ -177,11 +178,11 @@ main {
 /* ---------------TABLE---------------- */
 
 .table-div {
-    width: 90%;
+  width: 90%;
   /* background-color: tomato; */
 }
 
-.attendance-table {
+#atd-table {
   width: 100%;
   border-collapse: collapse;
   margin: 25px 0;
@@ -191,7 +192,7 @@ main {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.attendance-table thead tr {
+#atd-table thead tr {
   background-color: #2e2e2e;
   color: #ffffff;
   text-align: left;
@@ -201,29 +202,27 @@ table th:first-child {
 }
 
 table th:last-child {
-    border-radius: 0 10px 0 0;
+  border-radius: 0 10px 0 0;
 }
 
-.attendance-table th,
-.attendance-table td {
-    padding: 12px 15px;
+#atd-table th,
+#atd-table td {
+  padding: 12px 15px;
 }
 
-.attendance-table tr {
-    border-bottom: 1px solid #c0bfbf75;
+#atd-table tr {
+  border-bottom: 1px solid #c0bfbf75;
 }
 
-.attendance-table tr:not(thead tr):hover {
-    background-color: rgb(207, 207, 207) !important;
+#atd-table tr:not(thead tr):hover {
+  background-color: rgb(207, 207, 207) !important;
 }
 
-.attendance-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+#atd-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }
 
-.attendance-table tbody tr:last-of-type {
-    border-bottom: 3px solid #3f3f3f;
+#atd-table tbody tr:last-of-type {
+  border-bottom: 3px solid #3f3f3f;
 }
 /* ------------------------------- */
-
-
