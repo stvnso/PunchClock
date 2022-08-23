@@ -1,6 +1,5 @@
 const punchInTime = document.querySelector('#punch-in-time').innerHTML;
 const workedTime = document.querySelector('#hours-worked').innerHTML;
-
 const btn_punch = document.querySelector("#btn-punch");
 
 setInterval(refreshTime, 1000);
@@ -20,7 +19,11 @@ btn_punch.addEventListener('click', function(){
     document.getElementById("punch-in-time").innerHTML = currentTime.toLocaleTimeString('de-DE', { hour12: false, hour: '2-digit', minute:'2-digit' })
     setInterval(countWorkedTime,1000);
   }
-})
+  document.querySelector('#p-in-msg').innerHTML = "Youre checked In!"
+  setTimeout(function () {
+    document.querySelector('#p-in-msg').style.display = 'none';},1000);
+  })
+
 
 
 function countWorkedTime(){
