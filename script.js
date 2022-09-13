@@ -18,13 +18,13 @@ btn_punch.addEventListener('click', function(){
   } else {
     document.getElementById("punch-in-time").innerHTML = currentTime.toLocaleTimeString('de-DE', { hour12: false, hour: '2-digit', minute:'2-digit' })
     setInterval(countWorkedTime,1000);
+    document.querySelector('#p-in-msg').innerHTML = "Youre checked In!"
+    document.querySelector('#p-in-msg').classList.add('p-msg')
+    
+    setTimeout(function () {
+      document.querySelector('#p-in-msg').style.display = 'none';},3000);
   }
-  document.querySelector('#p-in-msg').innerHTML = "Youre checked In!"
-  setTimeout(function () {
-    document.querySelector('#p-in-msg').style.display = 'none';},1000);
   })
-
-
 
 function countWorkedTime(){
   const now = new Date()
@@ -54,7 +54,7 @@ document.querySelector("#tst").addEventListener("click", function () {
   cell1.innerHTML = now.toLocaleDateString('de-DE', options);
   cell2.innerHTML = document.querySelector('#punch-in-time').innerHTML;
   cell3.innerHTML = now.toLocaleTimeString('de-DE', { hour12: false, hour: '2-digit', minute:'2-digit'});
-  cell4.innerHTML = "Cell 2";
+  cell4.innerHTML = document.querySelector('#hours-worked').innerHTML
   cell5.innerHTML = "Cell 2";
 });
 
